@@ -1,0 +1,39 @@
+gray type = #222629
+green = #1ab188
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    regrastration 
+
+    $Rname = $_POST['Rname']??'';
+                        $Remail = $_POST['Remail']??'';
+                        $Rpassword = $_POST['Rpass']??'';
+                        $RrePassword = $_POST['Rrepass']??'';
+                      
+                        if (!empty($Rname)) 
+                        {
+                                                 
+                            $qry = "INSERT INTO `users_detail` (`user_id`, `user_name`, `email`, `Password`) VALUES (NULL,'$Rname','$Remail', '$Rpassword');";
+                            if (mysqli_query($conn, $qry)) 
+                            {
+                                header(" Location:RegisterDB.php");
+                                exit; // Always use exit() after header
+                            } 
+                           else {
+                            echo"not working";
+                             }
+                        }
+
+

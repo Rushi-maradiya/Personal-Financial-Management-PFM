@@ -1,0 +1,50 @@
+body {
+    background-color:#222629;
+}
+
+.form-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.toggle-btn {
+    flex: 1;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+ }
+
+.toggle-btn.active {
+    background-color: #1ab188 !important;
+    color: #fff !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.custom-btn
+{
+    border-color:#1ab188;
+    color: #1ab188;
+}
+
+.custom-btn:hover
+{
+    background-color: #1ab188;
+    color: white;
+}
+
+.custom-btn-secondary
+{
+    color: #1ab188;
+    border-color: #1ab188;
+}
+
+.custom-btn-secondary:hover
+{
+    background-color: #1ab188;
+    color: #fff;
+}

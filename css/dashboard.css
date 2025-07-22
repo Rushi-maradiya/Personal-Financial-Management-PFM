@@ -1,0 +1,85 @@
+/* Set a black background for the body and container */
+body {
+    background-color: #000; /* Black background */
+    color: white; /* Default text color */
+}
+
+.container {
+    background-color: #1a1a1a; /* Dark gray for container to stand out slightly */
+    color: white; /* Text color for the container */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}
+
+/* Chart container styling */
+.chart-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #444; /* Dark border for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    background-color: #222; /* Slightly lighter black for contrast */
+}
+
+/* Chart canvas styling */
+canvas {
+    width: 100% !important;
+    height: 300px;
+    background-color: #333; /* Dark gray background for the chart */
+}
+
+/* Styling for buttons with a black theme */
+.btn-outline-primary {
+    color: white; /* White text for unselected buttons */
+    border-color: #007bff; /* Blue border */
+}
+
+.btn-outline-primary:hover,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Adjust button group alignment */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Cards styling for black background */
+.card {
+    background-color: #222; /* Dark card background */
+    border: 1px solid #444; /* Border for cards */
+    color: white; /* Card text color */
+}
+
+.card-header {
+    background-color: #444; /* Slightly lighter header for contrast */
+    color: white; /* White header text */
+}
+
+/* Income, Expense, and Left Amount colors */
+.card-title.text-success {
+    color: #28a745; /* Green for income */
+}
+
+.card-title.text-danger {
+    color: #dc3545; /* Red for expenses */
+}
+
+.card-title.text-warning {
+    color: #ffc107; /* Yellow for left amount */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .dashboard .col-md-4 {
+        margin-bottom: 20px;
+    }
+}

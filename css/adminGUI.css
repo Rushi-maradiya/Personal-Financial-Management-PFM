@@ -1,0 +1,50 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+    z-index: 1050;
+}
+.sidebar .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFA500;
+}
+.sidebar .nav-link.active {
+    color: #198754 !important;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sidebar .nav-item:last-child {
+    margin-top: auto;
+}
+.logout-btn {
+    background-color: transparent;
+    color: #ff6347;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    width: 100%;
+}
+/* CSS to change link color when active */
+.nav-link.active {
+    color: #FFA500 !important;  /* Orange color or your preferred active color */
+    font-weight: bold;  /* Optional: Make it bold to highlight */
+}
